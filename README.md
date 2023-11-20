@@ -13,9 +13,3 @@ This repository implements a deep learning-based solution for accurate classific
 1. Clone the repository: `git clone https://github.com/AkashKobal/potato-disease-classification`<br>
 2. Install dependencies: `pip install -r requirements.txt`<br>
 3. Explore the Jupyter notebooks in the `notebooks` directory for model training and evaluation.<br>
-
-<h5>Contributions:</h5><br>
-Contributions are welcome! Whether you're improving the model architecture, adding new features, or enhancing documentation, your input is valued. Please follow our [contribution guidelines](CONTRIBUTING.md).<br>
-
-<h5>License:</h5><br>
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.<br>

@@ -10,7 +10,7 @@ This repository implements a deep learning-based solution for accurate classific
 5. Inference: Deploy the trained model for real-time or batch inference on new potato plant images.<br>
 
 <h5>Getting Started:</h5><br>
-1. Clone the repository: `git clone https://github.com/your-username/potato-disease-classification.git`<br>
+1. Clone the repository: `git clone https://github.com/AkashKobal/potato-disease-classification`<br>
 2. Install dependencies: `pip install -r requirements.txt`<br>
 3. Explore the Jupyter notebooks in the `notebooks` directory for model training and evaluation.<br>
 

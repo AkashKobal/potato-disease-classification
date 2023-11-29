@@ -5,12 +5,31 @@ import tensorflow as tf
 import uvicorn
 from io import BytesIO
 from PIL import Image
+import os
 
 
 app = FastAPI()
-MODEL = tf.keras.models.load_model("../training/models/1")
+
+# MODEL =tf.keras.models.load_model("../training/models/1")
+origins = [
+    "http://localhost",
+    "http://localhost:3000",
+]
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+
+MODEL =tf.keras.models.load_model("training/models/1")
+
+
 # prod_model = tf.keras.models.load_model("../training/models/1")
 # beta_model = tf.keras.models.load_model("../training/models/2")
+
 
 CLASS_NAMES = ["Early Blight", "Late Blight", "Healthy"]
 
@@ -31,8 +50,6 @@ async def predict(
 ):
     image = read_file_as_image(await file.read())
    
-
-
     img_batch = np.expand_dims(image, 0)
 
     prediction = MODEL.predict(img_batch)
@@ -49,3 +66,4 @@ async def predict(
 
 if __name__ == "__main__":
     uvicorn.run(app, host='localhost', port=8080)
+

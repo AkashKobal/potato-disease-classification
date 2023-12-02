@@ -5,6 +5,7 @@ body {
 		sans-serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	/* background-color: aquamarine; */
 }
 
 code {
@@ -13,8 +14,24 @@ code {
 }
 
 .MuiDropzoneArea-root {
-	background-color: transparent !important;
+	background-color: #714b2b54 !important;
 }
 .MuiDropzoneArea-text, .MuiDropzoneArea-icon {
   color: white !important;
+  font-weight: bolder;
+  font-size: x-large;
+}
+
+.MuiContainer-root{
+	/* background-image:image("bg.png"); */
+}
+.MuiAvatar-img{
+	visibility:collapse;
+}
+.MuiTypography-h6 {
+	position: fixed;
+	left: 42%;
+	font-weight: 900;
+	
+
 }

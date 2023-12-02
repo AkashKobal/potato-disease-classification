@@ -10,7 +10,7 @@ import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import { Paper, CardActionArea, CardMedia, Grid, TableContainer, Table, TableBody, TableHead, TableRow, TableCell, Button, CircularProgress } from "@material-ui/core";
 import cblogo from "./cblogo.PNG";
-import image from "./bg.png";
+import image from "./bgb.jpg";
 import { DropzoneArea } from 'material-ui-dropzone';
 import { common } from '@material-ui/core/colors';
 import Clear from '@material-ui/icons/Clear';
@@ -64,6 +64,8 @@ const useStyles = makeStyles((theme) => ({
     backgroundSize: 'cover',
     height: "93vh",
     marginTop: "8px",
+    // eslint-disable-next-line no-restricted-globals
+  
   },
   imageCard: {
     margin: "auto",
@@ -72,6 +74,7 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: 'transparent',
     boxShadow: '0px 9px 70px 0px rgb(0 0 0 / 30%) !important',
     borderRadius: '15px',
+    zIndex : -1,
   },
   imageCardEmpty: {
     height: 'auto',
@@ -135,9 +138,10 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
   },
   appbar: {
-    background: '#be6a77',
+    background: '#714a2be6',
     boxShadow: 'none',
-    color: 'white'
+    color: 'white',
+    fontWeight:"bolder"
   },
   loader: {
     color: '#be6a77 !important',
@@ -213,7 +217,7 @@ export const ImageUpload = () => {
       <AppBar position="static" className={classes.appbar}>
         <Toolbar>
           <Typography className={classes.title} variant="h6" noWrap>
-            CodeBasics: Potato Disease Classification
+           Potato Disease Classification
           </Typography>
           <div className={classes.grow} />
           <Avatar src={cblogo}></Avatar>

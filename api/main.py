@@ -26,6 +26,8 @@ app.add_middleware(
 
 MODEL =tf.keras.models.load_model("training/models/1")
 
+# MODEL = tf.keras.models.load_model("../training/models/1")
+
 
 # prod_model = tf.keras.models.load_model("../training/models/1")
 # beta_model = tf.keras.models.load_model("../training/models/2")

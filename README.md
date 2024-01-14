@@ -14,4 +14,3 @@ This repository implements a deep learning-based solution for accurate classific
 2. Install dependencies: `pip install -r requirements.txt`<br>
 3. Explore the Jupyter notebooks in the `notebooks` directory for model training and evaluation.<br>
 
-![Uploading Screenshot 2024-01-14 112914.png…]()
